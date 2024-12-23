@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "AVTANDIL"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="#about" class="verzach">О ресторане</a>
+        <a href="#menu" class="verzach">Меню</a>
+        <a href="#avta" class="verzach">Десерты</a>
+        <a href="#order" class="verzach">Заказ</a> <!-- Новый пункт меню для заказа -->
+        <a href="#contact" class="verzach">Контакты</a>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>Ресторан "AVTANDIL"</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>О ресторане</h2>
+        <div class="about-content">
+            <p>Ресторан "AVTANDIL" — это уютное место с авторской кухней, где каждый найдет что-то для себя. У нас вас ждут лучшие блюда, уютная атмосфера и отличное обслуживание.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="95b6846df37e7b1fd27747ea5bbcf13d.jpg" alt="Паста Альфредо" class="menu-img">
+                <p>Паста "Альфредо" - 500 сом.</p>
+            </div>
+            <div class="menu-item">
+                <img src="1666443536_12-podach.jpg" alt="Салат Цезарь" class="menu-img">
+                <p>Салат Цезарь - 350 сом.</p>
+            </div>
+            <div class="menu-item">
+                <img src="dlya_otbivaniya_myas.jpg" alt="Стейк с картошкой" class="menu-img">
+                <p>Стейк с картошкой - 380 сом.</p>
+            </div>
+            <div class="menu-item">
+                <img src="XXL_height.webp" alt="Суши" class="menu-img">
+                <p>Суши - 200 сом.</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza-nizhnevartovsk.jpeg" alt="Пицца" class="menu-img">
+                <p>Пицца - 350 сом.</p>
+            </div>
+            <div class="menu-item">
+                <img src="maxresdefault.jpg" alt="Хот-дог" class="menu-img">
+                <p>Хот-дог - 160 сом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="avta">
+        <h2>Десерты</h2>
+        <div class="menu-disert">
+            <div class="menu-item">
+                <img src="scale_1200.jpeg" alt="Коктейль Май Тай" class="menu-img">
+                <p>Коктейль "Май Тай" - 400 сом.</p>  
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="menu-item">
+                <img src="raspberries-chocolate-cake-chocolate-cake-berries-dessert-food-sweets-still-life-plates-depth-of-field-2128907.jpg" alt="Шоколадный пирог" class="menu-img">
+                <p>Шоколадный пирог - 150 сом.</p>
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="menu-item">
+                <img src="i (1).webp" alt="Тирамису" class="menu-img">
+                <p>Тирамису - 250 сом.</p>  <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="menu-item">
+                <img src="ед3.jpg" alt="Блины" class="menu-img">
+                <p>Блины - 300 сом.</p>
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="menu-item">
+                <img src="i (3).webp" alt="Пудинг" class="menu-img">
+                <p>Пудинг - 100 сом.</p>
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="menu-item">
+                <img src="i (4).webp" alt="Шоколадная пицца" class="menu-img">
+                <p>Шоколадная пицца - 350 сом.</p>
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+        </div> 
+        <div class="order-items">
+            <div class="order-item">
+                <img src="95b6846df37e7b1fd27747ea5bbcf13d.jpg" alt="Паста Альфредо" class="menu-img">
+                <p>Паста "Альфредо" - 500 сом.</p>
+                <input type="number" id="pasta-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Паста Альфредо', 500, document.getElementById('pasta-quantity').value)">Добавить в корзину</button>
+            </div>
+            <div class="order-item">
+                <img src="1666443536_12-podach.jpg" alt="Салат Цезарь" class="menu-img">
+                <p>Салат Цезарь - 350 сом.</p>
+                <input type="number" id="caesar-quantity" placeholder="Количество" min="1">
+                <button class="order-btn" onclick="addToCart('Салат Цезарь', 350, document.getElementById('caesar-quantity').value)">Добавить в корзину</button>
+            </div>
+            <!-- Другие товары меню для заказа можно добавить аналогично -->
+        </div>
+        <div id="cart">
+            <h3>Ваша корзина</h3>
+            <ul id="cart-items"></ul>
+            <button id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Адрес: ул. Октябрьская, 66</p>
+        <p>Телефон: +996552880280</p>
+        <button id="contactBtn">Связаться с нами</button>
+    </section>
+
+    <div id="contactForm" class="hidden">
+        <h3>Форма связи</h3>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Отправить</button>
+        </form>
+        <button id="closeForm">Закрыть</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ресторан "AVTANDIL". Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* Добавление стилей для меню заказа */
+#order {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.order-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.order-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-btn:hover {
+    background-color: #45a049;
+}
+
+#cart {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.menu-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+</style>
+<script>
+    let cart = [];
+
+function addToCart(itemName, itemPrice, quantity) {
+    if (quantity && quantity > 0) {
+        let cartItem = {
+            name: itemName,
+            price: itemPrice,
+            quantity: parseInt(quantity)
+        };
+        cart.push(cartItem);
+        updateCart();
+    } else {
+        alert('Пожалуйста, укажите количество.');
+    }
+}
+
+function updateCart() {
+    let cartItemsList = document.getElementById("cart-items");
+    cartItemsList.innerHTML = ''; // Очистить текущие товары в корзине
+    
+    let total = 0;
+    cart.forEach(function(item) {
+        let listItem = document.createElement('li');
+        listItem.textContent = ${item.name} - ${item.quantity} x ${item.price} сом;
+        cartItemsList.appendChild(listItem);
+        total += item.price * item.quantity;
+    });
+    
+    let totalPrice = document.createElement('li');
+    totalPrice.textContent = Общая сумма: ${total} сом;
+    cartItemsList.appendChild(totalPrice);
+}
+
+document.getElementById("checkoutBtn").addEventListener("click", function() {
+    if (cart.length > 0) {
+        alert("Спасибо за заказ! Мы свяжемся с вами для подтверждения.");
+        cart = []; // Очистить корзину после оформления заказа
+        updateCart();
+    } else {
+        alert("Ваша корзина пуста.");
+    }
+});
+
+document.getElementById("contactBtn").addEventListener("click", function() {
+    document.getElementById("contactForm").style.display = "block";
+});
+
+document.getElementById("closeForm").addEventListener("click", function() {
+    document.getElementById("contactForm").style.display = "none";
+});
+
+</script>
